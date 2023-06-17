@@ -1,6 +1,6 @@
 FROM python
-WORKDIR /test_api/
+WORKDIR /test/
 COPY  . .
 RUN pip install -r requirements.txt
 ENV ENV=dev
-CMD python -m pytest /test_api/test_API.py
+CMD python -m pytest /test/test.py
